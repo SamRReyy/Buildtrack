@@ -1,6 +1,4 @@
 
-<!-- KAYAOS NI -->
-
 <?php
 session_start(); // Start the session to manage user data
 ?>
