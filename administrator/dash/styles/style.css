@@ -1,0 +1,303 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(111, 80, 116);
+}
+
+
+/* Dashboard Layout */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    width: 25%;
+    max-width: 240px;
+    height: 100vh;
+    background-color: rgba(203, 207, 187, 0.2); /* Transparent version of original color */
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* Optional border for depth */
+}
+
+
+.sidebar .heads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+}
+
+.sidebar .heads img {
+    width: 250px;
+    height: 220px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar .menu {
+    list-style: none;
+}
+
+.sidebar .menu li {
+    margin-bottom: 20px;
+}
+
+.sidebar .menu li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar .menu li a img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.sidebar .menu li a:hover {
+    background-color: #5DB996;
+}
+
+.sidebar .menu li a:active {
+    background-color: #91afa1;
+}
+
+.menu a.active {
+    background-color:rgb(204, 204, 235);/* Example active color */
+    color: #fff; /* Text color for active item */
+}
+
+.menu i {
+    color: black;
+}
+
+
+/* Main Content */
+
+.main-content {
+    flex: 1;
+    margin-left: 240px;
+    min-height: 100vh;
+    background: url("../styles/product5.jpg") fixed center/cover;
+}
+
+
+/* Topbar */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    box-shadow: 0px 2px 4px rgb(1, 4, 4);
+    color: white;
+}
+
+.topbar .search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.topbar .user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .user-profile img {
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+
+/* Content Area */
+
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Profile Section */
+
+#profile-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Card Styles */
+
+.card {
+    width: 18rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(21, 103, 40, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(171, 224, 23, 0.7);
+    background-color: #e7f567;
+}
+
+.card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Product Section */
+
+.row.justify-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Shadow Effects */
+
+.colored-shadow {
+    background: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Blur effect for glassmorphism */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.2);
+    /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.colored-shadow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(18, 108, 18, 0.4);
+}
+
+
+/* Card Styling */
+
+.colored-shadow {
+    background: rgba(255, 255, 255, 0.15);
+    /* More transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+}
+
+.colored-shadow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 100, 0, 0.5);
+}
+
+
+/* Stylish Text */
+
+.stylish-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+}
+
+.user-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.center-content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.user-profile .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.user-profile .user-role {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: #333; /* Adjust color as needed */
+}

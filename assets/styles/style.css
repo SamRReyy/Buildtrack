@@ -1,0 +1,550 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../styles/top-view-steel-hammer-with-other-construction-elements-tools_974629-45916.jpg") fixed center/cover;
+    background-size: cover;
+    /* Ensures the image covers the entire body */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-attachment: fixed;
+    /* Keeps the image fixed while scrolling */
+    color: #333;
+    /* Adjust text color for better readability */
+}
+
+header {
+    background: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo img {
+    height: 100px;
+    /* Adjust as needed */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    background: #ff6347;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #e5533d;
+}
+
+.profile a {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.profile a:hover {
+    color: #ff6347;
+}
+
+
+/* Navigation Styles */
+
+nav {
+    background: transparent;
+    box-shadow: 0 2px 4px rgba(247, 247, 247, 0.1);
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    /* High contrast for bright background */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* Slightly larger text */
+    padding: 8px 12px;
+    /* Optional: adds space around links */
+    display: inline-block;
+    /* Makes padding effective */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e5533d;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #4e60d4;
+    /* Dark background for the footer */
+    color: white;
+    /* White text */
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    /* Larger font size for headings */
+    margin-bottom: 1rem;
+    /* Add spacing below headings */
+}
+
+footer ul {
+    padding-left: 0;
+    /* Remove default padding */
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+    /* Add spacing between list items */
+}
+
+footer a {
+    color: white;
+    /* White text for links */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+
+/* Additional Styling for All Rights Reserved Text */
+
+footer .text-center p.mb-0 {
+    font-size: 14px;
+    /* Smaller font size */
+    opacity: 0.8;
+    /* Slightly transparent */
+    margin-top: 1rem;
+    /* Add spacing above the text */
+}
+
+
+/* Social Media Icons */
+
+
+/* Social Media Icons */
+
+.social-media-icons a {
+    font-size: 1.5rem;
+    /* Larger icons */
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
+}
+
+.social-media-icons a:hover {
+    color: #ffcc00;
+    /* Change color on hover (e.g., yellow) */
+}
+
+
+/* Transparent Card Styling */
+
+.transparent-card {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    /* Darker transparent background */
+    border: none;
+    /* Remove card border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow for depth */
+    transition: all 0.5s ease-in-out;
+    /* Smooth transition for all properties */
+}
+
+.transparent-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    /* Lift and slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhance shadow on hover */
+}
+
+.card-img-top {
+    height: 200px;
+    /* Set fixed height for images */
+    object-fit: cover;
+    /* Ensure images cover the area */
+}
+
+
+/* Message Modal Styling */
+
+#messageModal .modal-content {
+    border-radius: 10px;
+    /* Rounded corners for the modal */
+}
+
+#messageModal .modal-header {
+    background-color: #007bff;
+    /* Blue background for the header */
+    color: white;
+    /* White text */
+    border-top-left-radius: 10px;
+    /* Match modal border radius */
+    border-top-right-radius: 10px;
+}
+
+#messageModal .modal-body {
+    padding: 20px;
+    /* Add padding inside the modal */
+}
+
+
+/* Message Box Styling */
+
+.message-box {
+    max-height: 300px;
+    /* Set a maximum height for the message box */
+    overflow-y: auto;
+    /* Add a scrollbar if messages overflow */
+    background-color: #fff;
+    /* White background for the message box */
+    border: 1px solid #ddd;
+    /* Add a border */
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+.message {
+    margin-bottom: 10px;
+    /* Add spacing between messages */
+    padding: 10px;
+    /* Add padding inside messages */
+    border-radius: 5px;
+    /* Rounded corners for messages */
+}
+
+
+/* Input Area Styling */
+
+.input-group {
+    margin-top: 15px;
+    /* Add spacing above the input area */
+}
+
+
+/* Sliding Image Gallery */
+
+.image-gallery {
+    background-color: transparent;
+    /* Make the section background transparent */
+    padding: 50px 0;
+    /* Add padding */
+}
+
+.carousel {
+    background: transparent !important;
+    /* Make the carousel background transparent */
+}
+
+.carousel-inner {
+    background: transparent !important;
+    /* Make the inner carousel background transparent */
+}
+
+.carousel-item {
+    background: transparent !important;
+    /* Make each slide background transparent */
+}
+
+.carousel-item img {
+    height: 400px;
+    /* Set a fixed height for the images */
+    object-fit: cover;
+    /* Ensure images cover the area */
+    border-radius: 10px;
+    /* Rounded corners for images */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Adjust the size of the control buttons */
+    background: transparent !important;
+    /* Make the control buttons transparent */
+    border: none;
+    /* Remove borders */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white background for icons */
+    border-radius: 50%;
+    /* Make the icons circular */
+    padding: 10px;
+    /* Add padding for better visibility */
+}
+
+
+/* Carousel Caption Styling */
+
+.carousel-item {
+    position: relative;
+    /* Make the carousel item a positioning context */
+    text-align: center;
+    /* Center-align text */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+    padding: 10px 20px;
+    /* Add padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    width: 80%;
+    /* Set the width of the caption */
+    max-width: 600px;
+    /* Limit the maximum width */
+    position: absolute;
+    /* Position the caption */
+    bottom: 20px;
+    /* Place at the bottom of the image */
+    left: 0;
+    /* Start from the left edge */
+    right: 0;
+    /* End at the right edge */
+    margin: 0 auto;
+    /* Center horizontally */
+    text-align: center;
+    /* Center-align text */
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    /* Larger font size for the title */
+    font-weight: bold;
+    /* Bold text */
+    margin-bottom: 10px;
+    /* Add spacing below the title */
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    /* Font size for the description */
+    margin-bottom: 0;
+    /* Remove default margin */
+}
+
+
+/* Optional: Smooth scroll and subtle hover effect */
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.glowing-border-text {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    /* Optional: semi-transparent background */
+    text-shadow: 0 0 5px #747680, 0 0 10px #1a1919, 0 0 20px #201e1e, 0 0 30px #202222;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Main container centering */
+
+.content-members {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    padding: 40px 0;
+}
+
+
+/* Title styling */
+
+.content-members h1 {
+    margin-bottom: 50px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+
+/* Card styling */
+
+.member-card {
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.05);
+    /* optional soft glass effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Card hover effect */
+
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Profile image */
+
+.member-img {
+    border-radius: 50%;
+    border: 4px solid #6c757d;
+    background-color: #f8f9fa;
+    padding: 5px;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+}
+
+
+/* Label styling */
+
+.member-card label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #555;
+    text-align: left;
+}
+
+
+/* Input styling */
+
+.member-card input[type="text"] {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    pointer-events: none;
+    font-size: 0.95rem;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.status-upcoming {
+    color: blue;
+}
+
+.status-in-progress {
+    color: orange;
+}
+
+.status-done {
+    color: green;
+}
+
+.status-upcoming {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+.status-in-progress {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+}
+
+.status-done {
+    background-color: #28a745; /* Green */
+    color: white;
+}

@@ -1,0 +1,103 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../styles/344.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 100%;
+}
+
+.container {
+    width: 30%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #66785F;
+    padding: 30px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    /* White with 30% transparency */
+    box-shadow: 0 4px 8px rgba(21, 103, 40, 0.2);
+    /* Subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+img {
+    width: 190px;
+    height: 155px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 93%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid hwb(340 1% 98%);
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.5);
+}
+
+button {
+    width: 98.5%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+}
+
+a {
+    color: white;
+}
+
+/* Profile Modal Styling */
+.profile-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    border-bottom: none;
+}
+
+.modal-header .btn-close {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
