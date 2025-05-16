@@ -59,23 +59,7 @@ $siteKey = $_ENV['RECAPTCHA_SITE_KEY'];
 
 
             </form>
-                <?php
-                    require_once('vendor/autoload.php');
-                    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/');
-                    $dotenv->load();
-
-                    // Create Google Client
-                    $client = new Google_Client();
-                    $client->setClientId($_ENV['GOOGLE_CLIENT_ID']);
-                    $client->setClientSecret($_ENV['GOOGLE_CLIENT_SECRET']);
-                    $client->setRedirectUri($_ENV['GOOGLE_REDIRECT']);
-                    $client->addScope('email');
-                    $client->addScope('profile');
-
-                    // Generate the Google OAuth authorization URL
-                    $authUrl = $client->createAuthUrl();
-                    ?>
-
+                
             <div class="text-center mt-3">
                 <a href="googleAuth/google-login.php" class="btn btn-danger w-100">
                     <i class="mdi mdi-google me-2"></i> Sign in with Google
