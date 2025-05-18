@@ -29,7 +29,7 @@
             <div class="profile d-flex align-items-center">
             <a href="profile.php" class="me-3"><i class="fas fa-user"></i></a>
                 <a href="#" data-bs-toggle="modal" data-bs-target="#messageModal" class="me-3"><i class="fas fa-robot"></i></a>
-                <a href="../login.html" class="btn btn-danger p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                  <a href="../login.php"   class="btn btn-danger p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
                     <i class="fas fa-sign-out-alt"></i>
                 </a>
             </div>

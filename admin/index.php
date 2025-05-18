@@ -66,14 +66,14 @@
                 <!-- Message Icon -->
                 <a href="#" data-bs-toggle="modal" data-bs-target="#messageModal" class="me-3"><i class="fas fa-robot"></i></a>
                 <!-- Logout Button -->
-                <a href="../login.php" 
+                <a href="../login.php"  
                  class="btn btn-danger p-0 d-flex align-items-center justify-content-center" 
                  style="width: 40px; height: 40px;" onclick="return confirm('Are you sure you want to logout?')">
                      <i class="fas fa-sign-out-alt"></i>
                 </a>
 
                     <!-- Logout icon -->
-                </a>
+                </a>    
             </div>
         </div>
      
