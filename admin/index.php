@@ -38,14 +38,13 @@
                             <div class="modal-body p-0">
                                 <!-- Profile Card -->
                                 <div class="card" style="background: white; border-radius: 20px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); width: 360px; padding: 20px; text-align: center; position: relative;">
-                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Profile" class="profile-img" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 5px solid white; position: absolute; top: -50px; left: 50%; transform: translateX(-50%); box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
+                                    <img src="../assets/images/apasdek.jpg" alt="Profile" class="profile-img" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 5px solid white; position: absolute; top: -50px; left: 50%; transform: translateX(-50%); box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
                                     <div class="top-actions" style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; color: #f64f59;">
-                                        <span style="cursor: pointer; display: flex; align-items: center;">👥 Connect</span>
-                                        <span style="cursor: pointer; display: flex; align-items: center;">💬 Message</span>
+                                       
                                     </div>
-                                    <h2 style="margin-top: 60px; font-size: 22px;">Samantha Jones</h2>
-                                    <p class="location" style="color: gray; font-size: 14px; margin: 5px 0 15px;">New York, United States</p>
-                                    <p class="role" style="font-size: 14px; color: #666; margin: 5px 0;">Web Producer - Web Specialist<br>Columbia University - New York</p>
+                                    <h2 style="margin-top: 60px; font-size: 22px;">Apasdek Construction Services</h2>
+                                    <p class="location" style="color: gray; font-size: 14px; margin: 5px 0 15px;">Macasandig, Cagayan de Oro, Philippines</p>
+                                    <p class="role" style="font-size: 14px; color: #666; margin: 5px 0;">Engineering Service · Contractor · Construction Company</p>
                                     <div class="stats" style="display: flex; justify-content: space-around; margin: 20px 0;">
                                         <div style="text-align: center;">
                                             <span style="display: block; font-weight: bold; font-size: 18px;">65</span>Friends
@@ -57,7 +56,7 @@
                                             <span style="display: block; font-weight: bold; font-size: 18px;">21</span>Comments
                                         </div>
                                     </div>
-                                    <button class="btn" style="background: linear-gradient(135deg, #f64f59, #c471ed); color: white; padding: 10px 25px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: background 0.3s;">Show more</button>
+                                   <a href="https://www.facebook.com/javeboi/"> <button class="btn" style="background: linear-gradient(135deg, #f64f59, #c471ed); color: white; padding: 10px 25px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: background 0.3s;">Show more</button></a>
                                 </div>
                             </div>
                         </div>

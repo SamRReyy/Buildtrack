@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../styles/344.jpeg");
+    background: url("../styles/adminn.jpg");
     background-attachment: fixed;
     background-size: cover;
     opacity: 100%;
@@ -57,7 +57,7 @@ button {
 }
 
 a {
-    color: white;
+    color: rgb(66, 175, 194);
 }
 
 /* Profile Modal Styling */

@@ -13,7 +13,7 @@ session_start();
         <div class="container">
             <div class="card">
                 
-            <img src="assets/images/7.png" alt="This is the logo">
+            <img src="../administrator/styles/logo.png" alt="This is the logo">
                     <div class ="card-body">
                         <?php if (isset($_SESSION['error'])):?>
                             <div class= "alert aler-danger" role="alert">
