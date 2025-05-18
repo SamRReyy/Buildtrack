@@ -65,6 +65,12 @@ foreach ($statuses as $status) {
                 </li>
                 <li>
                     <a href="../login.php">
+                        <i class="fas fa-users me-2"></i> <!-- Members Icon -->
+                        <span>Members</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../login.php">
                         <i class="fas fa-sign-out-alt me-2"></i> <!-- Logout Icon -->
                         <span>Logout</span>
                     </a>
