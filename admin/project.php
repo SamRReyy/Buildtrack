@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <header>
+     <header>
         <div class="header-top">
             <div class="logo">
-             <img src="../assets/images/logo.png" alt="Dashboard Logo" class="logo">
+                <img src="../assets/images/logo.png" alt="Dashboard Logo" class="logo">
             </div>
             <nav>
     <ul>
@@ -27,14 +27,55 @@
     </ul>
 </nav>
             <div class="profile d-flex align-items-center">
-            <a href="profile.php" class="me-3"><i class="fas fa-user"></i></a>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#messageModal" class="me-3"><i class="fas fa-robot"></i></a>
-                  <a href="../login.php"   class="btn btn-danger p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                    <i class="fas fa-sign-out-alt"></i>
+                <!-- Use Flexbox for alignment -->
+                <a href="#" class="me-3" data-bs-toggle="modal" data-bs-target="#profileModal">
+                    <i class="fas fa-user"></i>
                 </a>
+                <!-- Profile Modal -->
+                <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-end"> <!-- Align modal to the right -->
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <!-- Profile Card -->
+                                <div class="card" style="background: white; border-radius: 20px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); width: 360px; padding: 20px; text-align: center; position: relative;">
+                                    <img src="../assets/images/apasdek.jpg" alt="Profile" class="profile-img" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 5px solid white; position: absolute; top: -50px; left: 50%; transform: translateX(-50%); box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
+                                    <div class="top-actions" style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; color: #f64f59;">
+                                       
+                                    </div>
+                                    <h2 style="margin-top: 60px; font-size: 22px;">Apasdek Construction Services</h2>
+                                    <p class="location" style="color: gray; font-size: 14px; margin: 5px 0 15px;">Macasandig, Cagayan de Oro, Philippines</p>
+                                    <p class="role" style="font-size: 14px; color: #666; margin: 5px 0;">Engineering Service · Contractor · Construction Company</p>
+                                    <div class="stats" style="display: flex; justify-content: space-around; margin: 20px 0;">
+                                        <div style="text-align: center;">
+                                            <span style="display: block; font-weight: bold; font-size: 18px;">65</span>Friends
+                                        </div>
+                                        <div style="text-align: center;">
+                                            <span style="display: block; font-weight: bold; font-size: 18px;">43</span>Photos
+                                        </div>
+                                        <div style="text-align: center;">
+                                            <span style="display: block; font-weight: bold; font-size: 18px;">21</span>Comments
+                                        </div>
+                                    </div>
+                                   <a href="https://www.facebook.com/javeboi/"> <button class="btn" style="background: linear-gradient(135deg, #f64f59, #c471ed); color: white; padding: 10px 25px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: background 0.3s;">Show more</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Message Icon -->
+                <a href="#" data-bs-toggle="modal" data-bs-target="#messageModal" class="me-3"><i class="fas fa-robot"></i></a>
+                <!-- Logout Button -->
+                <a href="../login.php"  
+                 class="btn btn-danger p-0 d-flex align-items-center justify-content-center" 
+                 style="width: 40px; height: 40px;" onclick="return confirm('Are you sure you want to logout?')">
+                     <i class="fas fa-sign-out-alt"></i>
+                </a>
+
+                    <!-- Logout icon -->
+                </a>    
             </div>
         </div>
-       
+     
     </header>
 
     <main>
