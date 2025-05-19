@@ -48,10 +48,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     // Hash the password
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    // Insert the user data into the database
-    $stmt = $pdo->prepare("INSERT INTO users (firstname, lastname, username, email, password) VALUES (?, ?, ?, ?, ?)");
+    // Insert the user data into the database with role 'admin'
+    $stmt = $pdo->prepare("INSERT INTO users (firstname, lastname, username, email, password, role) VALUES (?, ?, ?, ?, ?, ?)");
     
-    if ($stmt->execute([$firstname, $lastname, $username, $email, $hashedPassword])) {
+    if ($stmt->execute([$firstname, $lastname, $username, $email, $hashedPassword, 'admin'])) {
         $_SESSION['success'] = "Your account has been created. You can now log in.";
         header('Location: login.php');
         exit();

@@ -16,63 +16,31 @@
     <header>
         <div class="header-top">
             <div class="logo">
-                <img src="../assets/images/logo.png" alt="Dashboard Logo" class="logo">
+                 <img src="../assets/images/logo.png" alt="Dashboard Logo" class="logo">
             </div>
             <nav>
-    <ul>
-        <li><a href="index.php" class="text-white <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">Home</a></li>
-        <li><a href="../admin/project.php" class="text-white <?php echo basename($_SERVER['PHP_SELF']) == 'project.php' ? 'active' : ''; ?>">Project</a></li>
-        <li><a href="report.php" class="text-white <?php echo basename($_SERVER['PHP_SELF']) == 'report.php' ? 'active' : ''; ?>">Reports</a></li>
-        <li><a href="members.php" class="text-white <?php echo basename($_SERVER['PHP_SELF']) == 'members.php' ? 'active' : ''; ?>">Members</a></li>
-    </ul>
-</nav>
+                <ul>
+                    <li><a href="index.php" class="text-white <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">Home</a></li>
+                    <li><a href="../admin/project.php" class="text-white <?php echo basename($_SERVER['PHP_SELF']) == 'project.php' ? 'active' : ''; ?>">Project</a></li>
+                    <li><a href="report.php" class="text-white <?php echo basename($_SERVER['PHP_SELF']) == 'report.php' ? 'active' : ''; ?>">Reports</a></li>
+                    <li><a href="members.php" class="text-white <?php echo basename($_SERVER['PHP_SELF']) == 'members.php' ? 'active' : ''; ?>">Members</a></li>
+                </ul>
+            </nav>
             <div class="profile d-flex align-items-center">
                 <!-- Use Flexbox for alignment -->
-                <a href="#" class="me-3" data-bs-toggle="modal" data-bs-target="#profileModal">
-                    <i class="fas fa-user"></i>
-                </a>
-                <!-- Profile Modal -->
-                <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-end"> <!-- Align modal to the right -->
-                        <div class="modal-content">
-                            <div class="modal-body p-0">
-                                <!-- Profile Card -->
-                                <div class="card" style="background: white; border-radius: 20px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); width: 360px; padding: 20px; text-align: center; position: relative;">
-                                    <img src="../assets/images/apasdek.jpg" alt="Profile" class="profile-img" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 5px solid white; position: absolute; top: -50px; left: 50%; transform: translateX(-50%); box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
-                                    <div class="top-actions" style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; color: #f64f59;">
-                                       
-                                    </div>
-                                    <h2 style="margin-top: 60px; font-size: 22px;">Apasdek Construction Services</h2>
-                                    <p class="location" style="color: gray; font-size: 14px; margin: 5px 0 15px;">Macasandig, Cagayan de Oro, Philippines</p>
-                                    <p class="role" style="font-size: 14px; color: #666; margin: 5px 0;">Engineering Service · Contractor · Construction Company</p>
-                                    <div class="stats" style="display: flex; justify-content: space-around; margin: 20px 0;">
-                                        <div style="text-align: center;">
-                                            <span style="display: block; font-weight: bold; font-size: 18px;">65</span>Friends
-                                        </div>
-                                        <div style="text-align: center;">
-                                            <span style="display: block; font-weight: bold; font-size: 18px;">43</span>Photos
-                                        </div>
-                                        <div style="text-align: center;">
-                                            <span style="display: block; font-weight: bold; font-size: 18px;">21</span>Comments
-                                        </div>
-                                    </div>
-                                   <a href="https://www.facebook.com/javeboi/"> <button class="btn" style="background: linear-gradient(135deg, #f64f59, #c471ed); color: white; padding: 10px 25px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: background 0.3s;">Show more</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a href="manage_users.php" class="me-3"><i class="fas fa-user"></i></a>
+                <!-- Profile icon -->
                 <!-- Message Icon -->
                 <a href="#" data-bs-toggle="modal" data-bs-target="#messageModal" class="me-3"><i class="fas fa-robot"></i></a>
                 <!-- Logout Button -->
-                <a href="../login.php"  
+                <a href="../login.php" 
                  class="btn btn-danger p-0 d-flex align-items-center justify-content-center" 
                  style="width: 40px; height: 40px;" onclick="return confirm('Are you sure you want to logout?')">
                      <i class="fas fa-sign-out-alt"></i>
                 </a>
 
                     <!-- Logout icon -->
-                </a>    
+                </a>
             </div>
         </div>
      
@@ -85,20 +53,87 @@
             <div class="container">
                 <!-- Main heading with Bootstrap classes -->
                 <h2 class="display-4 text-white fw-bold glowing-border-text">
-                    "WELCOME TO BUILDTRACT"
-                </h2>
+  "WE BUILD MORE THAN STRUCTURES—WE BUILD TRUST"
+</h2>
 
-                <!-- Info Section -->
-                <p class="text-white mt-4 text-center">
-                    Buildtract is your trusted partner in construction, offering innovative solutions to bring your projects to life. From planning to execution, we ensure quality and excellence every step of the way.
-                </p>
-
-                <!-- Button to Projects Page -->
-                <a href="project.php" class="btn btn-primary mt-3">Explore Our Projects</a>
+    <div class="container text-center">
+      
+        <div class="row justify-content-center">
+            <!-- Member 1 -->
+            <div class="col-md-4">
+                <div class="member-card">
+                    <img src="../assets/images/milcky.jpg" alt="Profile Picture" class="member-img">
+                    <div class="card-body">
+                        <label style="color: white;">Student ID</label>
+                        <input type="text" value="2301104471" disabled>
+                        <label style="color: white;">Name</label>
+                        <input type="text" value="Milcky Jhones Francisco" disabled>
+                        <label style="color: white;">Email</label>
+                        <input type="text" value="milckyjhonesfrancisco@gmail.com" disabled>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            <!-- Member 2 -->
+            <div class="col-md-4">
+                <div class="member-card">
+                <img src="../assets/images/sam.jpg" alt="Profile Picture" class="member-img">
+                    <div class="card-body">
+                        <label style="color: white;">Student ID</label>
+                        <input type="text" value="2301108902" disabled>
+                        <label style="color: white;">Name</label>
+                        <input type="text" value="Sam Anthony Rey" disabled>
+                        <label style="color: white;">Email</label>
+                        <input type="text" value="230113505@student.edu.buksu.ph" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="col-md-4">
+                <div class="member-card">
+                <img src="../assets/images/joshua.jpg" alt="Profile Picture" class="member-img">
+                    <div class="card-body">
+                        <label style="color: white;">Student ID</label>
+                        <input type="text" value="2301103884" disabled>
+                        <label style="color: white;">Name</label>
+                        <input type="text" value="Joshua Caranay" disabled>
+                        <label style="color: white;">Email</label>
+                        <input type="text" value="22301103884@student.edu.buksu.ph" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
     </main>
-       
+
+    <!-- Message Modal -->
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="messageModalLabel">Chatbot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Message Box -->
+                    <div class="message-box bg-light p-4 rounded">
+                        <!-- Example Messages -->
+                        <div class="message alert alert-info">What can i help you today?</div>
+                    </div>
+                    <!-- Input Area for New Messages -->
+                    <div class="input-group mt-3">
+                        <input type="text" id="messageInput" class="form-control" placeholder="Type your message...">
+                        <button id="sendMessageBtn" class="btn btn-primary" type="button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-dark text-white py-5">
         <div class="container">
@@ -107,7 +142,7 @@
                 <div class="col-md-4 mb-4">
                     <h5>Contact Us</h5>
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-phone me-2"></i>09465347640</li>
+                    <li><i class="fas fa-phone me-2"></i>09465347640</li>
                         <li><i class="fas fa-envelope me-2"></i>constructstore@gmail.com</li>
                         <li><i class="fas fa-map-marker-alt me-2"></i>Landing, Malaybalay City, Bukidnon, Philippines</li>
                     </ul>
@@ -120,7 +155,7 @@
                         <div class="col-6">
                             <h5>Sitemap</h5>
                             <ul class="list-unstyled">
-                                <li><a href="index.php" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="index.php" class="text-white text-decoration-none">Home</a></li>
                                 <li><a href="project.php" class="text-white text-decoration-none">Projects</a></li>
                                 <li><a href="report.php" class="text-white text-decoration-none">Reports</a></li>
                                 <li><a href="members.php" class="text-white text-decoration-none">Members</a></li>
@@ -143,7 +178,7 @@
 
                 <!-- Logo Section -->
                 <div class="col-md-4 mb-4 text-md-end">
-                      <img src="../assets/images/logo.png" alt="Dashboard Logo" class="logo">
+                    <img src="../assets/images/7.png" alt="Logo" class="footer-logo" style="width: 100px;">
                     <p class="mt-2">"WE BUILD FOR THE FUTURE"</p>
                 </div>
             </div>
