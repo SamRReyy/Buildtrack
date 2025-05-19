@@ -62,8 +62,26 @@
 
 ### 6.Configure Google OAuth:
 
-Go to the Google Cloud Console
-Create a new project or select an existing one
-Enable the Google+ API
-Create OAuth 2.0 credentials
-Add the redirect URL: http://localhost/hj-gownshop/googleAuth/google-callback.php
+- Go to the [Google Cloud Console](https://console.cloud.google.com/)
+- Create a new project or select an existing one
+- Enable the Google+ API
+- Create OAuth 2.0 credentials
+- Add the redirect URL: `http://localhost/hj-gownshop/googleAuth/google-callback.php`
+
+## Usage
+### 1. Start your local server (XAMPP, etc.)
+### 2. Navigate to http://localhost/ConstructStore/
+### 3. Register a new account or log in with Google
+
+
+## Stuctures
+assets/        - Images, CSS and JavaScript files
+admin/         - user dashboard files
+administrator/ - Admin dashboard files
+includes/      - Database connection and utilities
+google-auth/   - Google OAuth integration
+styles/        - CSS stylesheets
+vendor/        - Composer dependencies
+
+## Contact
+-for more questions please contant me on email:reys10801@gmail.com
