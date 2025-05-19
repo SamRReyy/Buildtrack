@@ -53,10 +53,17 @@
 
 ## 📦 Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/hj-gownshop.git
-cd hj-gownshop
+### 1.Clone the repository by running the following command in your terminal:
+### 2.git clone https://github.com/yourusername/hj-gownshop.git
+### 3.Then navigate into the project directory:
+### 4.Create a .env file in the root directory with the following variables: DB_HOST=localhost DB_NAME=construct  DB_USER=your_database_users DB_USER=your_database_task DB_USER=your_database_clients APP_BOOKING_SYSTEM= EMAIL_ADMIN=HJ_Buildtrackwebsites@gmail.com EMAIL_PASS=your_gmail_app_password GOOGLE_CLIENT_ID=your_google_client_secret GOOGLE_CLIENT_SECRET=https://localhost/ConstrucStore/google-callback.php
 
-# Install PHP dependencies
-composer install
+### 5.import the database schema: mysql -u your_database_user -p your_database_name < import.sql
+
+### 6.Configure Google OAuth:
+
+Go to the Google Cloud Console
+Create a new project or select an existing one
+Enable the Google+ API
+Create OAuth 2.0 credentials
+Add the redirect URL: http://localhost/hj-gownshop/googleAuth/google-callback.php
