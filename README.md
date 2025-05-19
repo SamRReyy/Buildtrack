@@ -1,6 +1,6 @@
 # BuildTrack
 
-**BuildTrack** is a visual project management tool that uses **boards**, **lists**, and **cards** to help teams organize tasks, track progress, and collaborate efficiently — similar to Trello.
+**BuildTrack** is a website project management tool that uses **boards**, **lists**, and **cards** to help teams organize tasks, track progress, and collaborate efficiently — similar to Trello.
 
 ---
 
