@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_user'])) {
     $lastname = trim($_POST['lastname']);
     $email = trim($_POST['email']);
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    $role = $_POST['role'];
+    $role = 'user'; // Force role to always be 'user'
 
     // Check if the username already exists
     $stmt = $pdo->prepare("SELECT COUNT(*) FROM users WHERE username = ?");
@@ -63,15 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_user'])) {
     }
 }
 
-$construction_roles = [
-    'Project Manager',
-    'Civil Engineer',
-    'Architect',
-    'Site Supervisor',
-    'Quantity Surveyor',
-    'Construction Foreman',
-    'MEP Engineer'
-];
+
 ?>
 
 <!DOCTYPE html>
@@ -164,11 +156,7 @@ $construction_roles = [
                                     <input type="password" name="password" class="form-control" placeholder="Password" required>
                                 </div>
                                 <div class="col-md-1">
-                                    <select name="role" class="form-select" required>
-                                        <?php foreach ($construction_roles as $role): ?>
-                                            <option value="<?= htmlspecialchars($role) ?>"><?= htmlspecialchars($role) ?></option>
-                                        <?php endforeach; ?>
-                                    </select>
+        
                                 </div>
                                 <div class="col-md-1">
                                     <button type="submit" name="add_user" class="btn btn-success w-100">Add</button>
@@ -189,7 +177,6 @@ $construction_roles = [
                                 <th>Username</th>
                                 <th>Email</th>
                                 <th>Role</th>
-                                <th>Change Role</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -202,21 +189,6 @@ $construction_roles = [
                                 <td><?= htmlspecialchars($user['username']) ?></td>
                                 <td><?= htmlspecialchars($user['email']) ?></td>
                                 <td><?= htmlspecialchars($user['role']) ?></td>
-                                <td>
-                                    <form method="POST" class="d-flex">
-                                        <input type="hidden" name="user_id" value="<?= $user['id'] ?>">
-                                        <select name="role" class="form-select me-2">
-                                            <?php foreach ($construction_roles as $role): ?>
-                                                <option value="<?= htmlspecialchars($role) ?>" <?= $user['role'] === $role ? 'selected' : '' ?>>
-                                                    <?= htmlspecialchars($role) ?>
-                                                </option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                        <button type="submit" name="update_role" class="btn btn-primary btn-sm">
-                                            <i class="fas fa-pen fa-fw"></i> 
-                                        </button>
-                                    </form>
-                                </td>
                                 <td>
                                     <a href="?delete=<?= $user['id'] ?>" class="btn btn-danger btn-sm"
                                        onclick="return confirm('Are you sure you want to delete this user?');">

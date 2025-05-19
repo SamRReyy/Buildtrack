@@ -70,7 +70,9 @@ foreach ($statuses as $status) {
     </ul>
 </nav>
             <div class="profile d-flex align-items-center">
-                <!-- Use Flexbox for alignment -->
+                <a href="generate_pdf.php" class="btn mb-3 me-3" style="background-color: #6c757d; color: #fff; border: none;" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Print PDF
+                </a>
                 <a href="#" class="me-3" data-bs-toggle="modal" data-bs-target="#profileModal">
                     <i class="fas fa-user"></i>
                 </a>

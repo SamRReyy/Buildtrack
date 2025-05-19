@@ -16,10 +16,21 @@ $totalUsersQuery = "SELECT COUNT(*) AS total_users FROM users";
 $totalUsersResult = $connection->query($totalUsersQuery);
 $totalUsers = $totalUsersResult->fetch_assoc()['total_users'];
 
-// Fetch first and last names of users
-$usersQuery = "SELECT firstname, lastname FROM users";
+// Fetch all users with roles
+$usersQuery = "SELECT firstname, lastname, role FROM users";
 $usersResult = $connection->query($usersQuery);
 $users = $usersResult->fetch_all(MYSQLI_ASSOC);
+
+// Separate admin and users
+$admin = null;
+$userList = [];
+foreach ($users as $user) {
+    if (strtolower($user['role']) === 'admin' && $admin === null) {
+        $admin = $user;
+    } else {
+        $userList[] = $user;
+    }
+}
 ?>
 <!DOCTYPE html>
 
@@ -45,27 +56,26 @@ $users = $usersResult->fetch_all(MYSQLI_ASSOC);
             </div>
             <ul class="menu">
                 <li>
-                     
                     <a href="index.php" class="active">
-                        <i class="fas fa-tachometer-alt me-2"></i> <!-- Dashboard Icon -->
+                        <i class="fas fa-tachometer-alt me-2"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <li>
                     <a href="reports.php">
-                        <i class="fas fa-chart-bar me-2"></i> <!-- Reports Icon -->
+                        <i class="fas fa-chart-bar me-2"></i>
                         <span>Reports</span>
                     </a>
                 </li>
                 <li>
                     <a href="account.php" >
-                        <i class="fas fa-users me-2"></i> <!-- Accounts Icon -->
+                        <i class="fas fa-users me-2"></i>
                         <span>Accounts</span>
                     </a>
                 </li>
                 <li>
                     <a href="../login.php">
-                        <i class="fas fa-sign-out-alt me-2"></i> <!-- Logout Icon -->
+                        <i class="fas fa-sign-out-alt me-2"></i>
                         <span>Logout</span>
                     </a>
                 </li>
@@ -85,8 +95,23 @@ $users = $usersResult->fetch_all(MYSQLI_ASSOC);
         
             <div class="container center-content">
                 <div class="row">
+                    <!-- Admin Card -->
+                    <div class="col-md-4">
+                        <div class="card user-card text-center border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Admin</h5>
+                                <?php if ($admin): ?>
+                                    <h2 class="text-dark"><?= htmlspecialchars($admin['firstname']) . ' ' . htmlspecialchars($admin['lastname']) ?></h2>
+                                    <span class="badge bg-primary">ADMIN</span>
+                                <?php else: ?>
+                                    <p>No admin found.</p>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Total Users Card -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="card user-card text-center">
                             <div class="card-body">
                                 <h5 class="card-title">Total Users</h5>
@@ -96,15 +121,16 @@ $users = $usersResult->fetch_all(MYSQLI_ASSOC);
                     </div>
 
                     <!-- User List Card -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="card user-card">
                             <div class="card-body">
                                 <h5 class="card-title text-center">User List</h5>
                                 <div class="user-list">
                                     <ul class="list-group" id="userList">
-                                        <?php foreach ($users as $user): ?>
+                                        <?php foreach ($userList as $user): ?>
                                             <li class="list-group-item">
                                                 <?= htmlspecialchars($user['firstname']) . ' ' . htmlspecialchars($user['lastname']) ?>
+                                                <span class="badge bg-secondary float-end"><?= htmlspecialchars(strtoupper($user['role'])) ?></span>
                                             </li>
                                         <?php endforeach; ?>
                                     </ul>
