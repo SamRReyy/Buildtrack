@@ -74,14 +74,16 @@
 ### 3. Register a new account or log in with Google
 
 
-## Stuctures
-assets/        - Images, CSS and JavaScript files
-admin/         - user dashboard files
-administrator/ - Admin dashboard files
-includes/      - Database connection and utilities
-google-auth/   - Google OAuth integration
-styles/        - CSS stylesheets
-vendor/        - Composer dependencies
+## Project Structure
+
+- **assets/**        Images, CSS, and JavaScript files  
+- **admin/**         User dashboard files  
+- **administrator/** Admin dashboard files  
+- **includes/**      Database connection and utility scripts  
+- **google-auth/**   Google OAuth integration  
+- **styles/**        CSS stylesheets  
+- **vendor/**        Composer dependencies  
+
 
 ## Contact
 -for more questions please contant me on email:reys10801@gmail.com
