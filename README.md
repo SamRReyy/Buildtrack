@@ -76,13 +76,14 @@
 
 ## Project Structure
 
-- **assets/**        Images, CSS, and JavaScript files  
-- **admin/**         User dashboard files  
-- **administrator/** Admin dashboard files  
-- **includes/**      Database connection and utility scripts  
-- **google-auth/**   Google OAuth integration  
-- **styles/**        CSS stylesheets  
-- **vendor/**        Composer dependencies  
+- 📁 **assets/** – Images, CSS, and JavaScript files  
+- 👤 **admin/** – User dashboard files  
+- 🛠️ **administrator/** – Admin dashboard files  
+- 🧩 **includes/** – Database connection and utility scripts  
+- 🔐 **google-auth/** – Google OAuth integration  
+- 🎨 **styles/** – CSS stylesheets  
+- 📦 **vendor/** – Composer dependencies  
+
 
 
 ## Contact
