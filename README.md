@@ -66,7 +66,7 @@
 - Create a new project or select an existing one
 - Enable the Google+ API
 - Create OAuth 2.0 credentials
-- Add the redirect URL: `http://localhost/hj-gownshop/googleAuth/google-callback.php`
+- Add the redirect URL: `http://localhost/Construcstore/googleAuth/google-callback.php`
 
 ## Usage
 ### 1. Start your local server (XAMPP, etc.)
